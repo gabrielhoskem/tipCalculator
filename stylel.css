@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+/* --------------------------------------------------FONTES */
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* --------------------------------------------------FONTES */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 100px;
+    min-height: 100vh;
+}
+
+main {
+    border-radius: 20px;
+    background-color: white;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 1fr;
+    grid-template-rows: 100px 100px 100px;
+    padding: 30px;
+}
+
+.titulosinput {
+    color: hsl(183, 100%, 15%);
+}
+
+.valorconta {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    padding: 10px 5px 10px 0;
+    width: 300px;
+    margin-top: 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+content {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.tabelaporcentagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    list-style: none;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+li {
+    display: flex;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 93px;
+    height: 40px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.liselecionado {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.porcentagemcustom {
+    width: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+aside {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: hsl(183, 100%, 15%);
+    width: fit-content;
+    height: fit-content;
+}
+
+.numerodepessoas {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    padding: 10px 5px 10px 0;
+    width: 300px;
+
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 15px 15px;
+    row-gap: 40px;
+    height: 100%;
+    padding: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+button {
+    width: 250px;
+    background-color: hsl(183, 93%, 23%);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.tipamount {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.total {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.valor1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+}
+
+.valor2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: right;
+}
